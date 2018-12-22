@@ -1,22 +1,13 @@
-.jumbotron{
-  text-align: center;
-  background: url(https://thecourtneyatuniversalboulevard.com/wp-content/uploads/2015/07/festival.jpg);
+.jumbotron {
+    text-align: center;
+   
+    margin: 20px 30px 0 30px;
+  
+    background-color: white;
+}
+
+body {
+    background: url(https://thecourtneyatuniversalboulevard.com/wp-content/uploads/2015/07/festival.jpg);
   background-size: cover;
-  background-position: 0% 100%;
-  /* background-repeat: no-repeat; */
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  margin: 20px 30px 0 30px;
-}
-
-h1{
-  font-family: 'Fredoka One', cursive;
-  /* text-transform: none; */
-}
-
-#submit{
-   display:block;
-   width: 150px;
-  text-align: center;
-  margin:0 auto;
+ 
 }
