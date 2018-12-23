@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .jumbotron{
   text-align: center;
   background: url(https://thecourtneyatuniversalboulevard.com/wp-content/uploads/2015/07/festival.jpg);
@@ -7,16 +8,13 @@
   opacity: 0.8;
   filter: alpha(opacity=50);
   margin: 20px 30px 0 30px;
+=======
+.jumbotron {
+    text-align: center;
+   
+    margin: 20px 30px 0 30px;
+  
+    background-color: white;
+>>>>>>> 7ae74745953dea606848b6f4a171be3a3cd70117
 }
 
-h1{
-  font-family: 'Fredoka One', cursive;
-  /* text-transform: none; */
-}
-
-#submit{
-   display:block;
-   width: 150px;
-  text-align: center;
-  margin:0 auto;
-}
