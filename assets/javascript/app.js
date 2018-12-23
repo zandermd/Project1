@@ -39,3 +39,4 @@ var database = firebase.database();
         // Running the searchBandsInTown function(passing in the artist as an argument)
         searchBandsInTown(inputArtist);
       });
+      
