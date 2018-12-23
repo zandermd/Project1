@@ -8,4 +8,18 @@
    
 }
 
+.container1, .container2 {
+    position: absolute;
+    left:0;
+    right:0;
+    height:400px; /* based on screen size */
+}
+.container1 {
+    top: 0;
+    background-color: white;
+}
+.container2 {
+    bottom: 0;
+    background-color: white;
+}
 
