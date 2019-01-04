@@ -139,12 +139,6 @@ function search(artist) {
             // Display buttons
             $('#buttons').append(buttons);
         });    
-};
-
-// Previous page function
-function prevPage() {
-    var token = $('#prev-button').data('token');
-    var q = $('#prev-button').data('query');
     
     
     // clear 
@@ -184,7 +178,7 @@ function prevPage() {
             // Display buttons
             $('#buttons').append(buttons);
         });    
-};
+
 
 // Build output
 function getOutput(item) {
