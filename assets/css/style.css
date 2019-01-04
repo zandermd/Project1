@@ -1,17 +1,27 @@
-.jumbotron {
-    text-align: center;
-   
-    margin: 20px 30px 0 30px;
-  
-    background-color: white;
+body{
+  background-color: rgb(0, 0, 0);
+}
 
-   
+.lead{
+  color:black;
+}
+
+.jumboimg{
+  background-image: url(../images/jumbobackground.jpg);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  margin: 20px 30px 0 30px;
+  color:white;
+  background-size: cover;
+  background-position: 0% 100%;
 }
 
 
 
 .container {
     position: relative;
+   
+
   }
   
   /* Bottom right text */
