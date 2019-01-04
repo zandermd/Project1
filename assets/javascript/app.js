@@ -45,7 +45,7 @@ var database = firebase.database();
         searchBandsInTown(inputArtist);
       });
 
-      // Google/Youtube video finder AJAX - API
+      //Youtube video finder AJAX - API
 
 var videoArtist;
 
@@ -100,11 +100,6 @@ function search(artist) {
             $('#buttons').append(buttons);
     });
  };
-
-// Next page function
-function nextPage() {
-    var token = $('#next-button').data('token');
-    var q = $('#next-button').data('query');
     
     
     // clear 
@@ -112,8 +107,8 @@ function nextPage() {
     $('#buttons').html('');
     
     // get form input
-    q = $('#query').val();  // this probably shouldn't be created as a global
-    
+    q = $('#query').val();  
+
     // run get request on API
     $.get(
         `https://www.googleapis.com/youtube/v3/search?&part=snippet,id&q=${videoArtist}&type=video&key=${gapikey}`, {
