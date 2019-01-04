@@ -16,32 +16,149 @@ body{
   background-position: 0% 100%;
 }
 
+.container1, .container2 {
+  position: absolute;
+  left:0;
+  right:0;
+  height:400px; /* based on screen size */
+}
+
+.container1 {
+  top: 0;
+  background-color: white;
+}
+
+.container2 {
+  bottom: 0;
+  background-color: white;
+}
+
+.jumbotron{
+  text-align: center;
+  margin: 20px 30px 0 30px;
+  background-color: white;
+  /* background-repeat: no-repeat; */
+}
 
 
-.container {
-    position: relative;
-   
+/*artist page*/
+.edJumbo{
+  text-align:left;
+  padding: 1%;
+  padding-right: 55%;
+  padding-left: 5%
+}
 
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  margin-top: 2%;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height:100% ;
+  z-index: 90;
+}
+
+.row{
+  margin-left: 2%;
+  margin-right: 2%;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#music{
+margin:5%
+}
+
+#band{
+  margin: 5%;
+}
+
+p{
+  color:white;
+}
+
+hr{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.animation{
+
+  background-color: red;
+  position: relative;
+  -webkit-animation-name: example; 
+  -webkit-animation-duration: 30s; 
+  -webkit-animation-iteration-count: infinite; 
+  animation-name: example;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example {
+  0%   {background-color:rgba(0, 174, 255, 0.651);}
+  25%  {background-color:rgb(0, 255, 136); }
+  50%  {background-color:rgba(76, 0, 255, 0.726);}
+  75%  {background-color:green; }
+  100% {background-color:rgb(0, 255, 85);}
+}
+
+
+@keyframes example {
+  0%   {background-color:rgba(0, 255, 200, 0.541); }
+  25%  {background-color:rgb(0, 153, 255); }
+  50%  {background-color:rgba(111, 0, 255, 0.671);}
+  75%  {background-color:green;}
+  100% {background-color:rgba(0, 255, 106, 0.644); }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
   }
-  
-  /* Bottom right text */
-  .text-block {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+}
 
-  .mySlides 
-  {
+h1{
+  margin-top:2%;
+  font-family: 'Fredoka One', cursive;
+  /* text-transform: none; */
+  text-align: center;
+  
+}
 
+#med{
+color:white;
+}
+
+#eve{
+color:white;
+}
+
+/* .pcard{
+  z-index: 100;
   
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
-  
+}*/
+
+
+
+
+.myslides{
+  margin-top: 0;
+  z-index: 99;
+} 
