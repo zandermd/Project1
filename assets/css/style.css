@@ -5,7 +5,10 @@ body{
 .lead{
   color:black;
 }
+#info {
 
+  display:none;
+}
 #stalk{
   
 }
