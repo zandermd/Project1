@@ -42,7 +42,7 @@ $("#stalk").on("click", function (event) {
     event.preventDefault();
     // Storing the artist name
     var inputArtist = $("#artist-input").val().trim();
-    $(".jumbotron").hide();
+    $("#jumbotron").hide();
 $("#info").show();
     // Running the searchBandsInTown function(passing in the artist as an argument)
     searchBandsInTown(inputArtist);
