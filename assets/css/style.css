@@ -108,10 +108,9 @@ body {
 .lead{
   color:black;
 }
-
-/* #stalk{
-  
-} */
+#info {
+  display: none;
+}
 
 .navbar-brand{
   font-size: 35px;
