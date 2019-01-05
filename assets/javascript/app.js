@@ -33,10 +33,28 @@ function searchBandsInTown(artist) {
             var upcomingEvents = $("<h2>").text(response.upcoming_event_count + " upcoming events");
 
 
-            // Empty the contents of the band-div, append the new artist content
+            // Empty the contents of the band div, append the new artist content
             $("#band").empty();
             $("#band").append(artistURL, artistImage, upcomingEvents, artistName);
-            
+
+            // Constructing the Loop to append events to Band Div
+         
+           for (var i = 0; i < responseEvents.length; i++) {
+            //    text += upcomingEvents[i] + "<band>";
+            // console.log(responseEvents[i]);
+
+            var venueName = responseEvents[i].venue.name;
+            var venueCountry = responseEvents[i].venue.country;
+            var venueCity = responseEvents[i].venue.city;
+            var venueDate = responseEvents[i].datetime;
+
+            console.log(
+                venueName,
+                venueCity,
+                venueCountry,
+                venueDate,
+            )
+            }
         });
 
     });
