@@ -6,6 +6,15 @@ body{
   color:black;
 }
 
+#stalk{
+  
+}
+
+.navbar-brand{
+  font-size: 35px;
+  padding-left:1%;
+}
+
 .jumboimg{
   background-image: url(../images/jumbobackground.jpg);
   opacity: 0.5;
@@ -59,16 +68,22 @@ body{
 .column {
   margin-top: 2%;
   float: left;
-  width: 50%;
+  width: 48%;
   padding: 10px;
   height:100% ;
   z-index: 90;
 }
 
 .row{
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 1%;
+}
 
+.medDiv{
+  margin-left:1%;
+}
+
+.artInfo{
+  margin-right:1%
 }
 
 .row:after {
