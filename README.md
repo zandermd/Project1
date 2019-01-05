@@ -9,7 +9,3 @@ APIS: Youtube API to bring up live music for that band so user can see if they l
 Framework used: BootSwatch
 
 User Experience: Our website will be a smooth interface for users to simply search for the band they're wanting to see live with a search bar on the top of the webpage. Once entered, the band information, upcoming events, and a photo of the band will appear in one container. Videos of the band performing live will show in the other container for the user to watch if they please. 
-
-
-
-
