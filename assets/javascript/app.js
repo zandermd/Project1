@@ -12,26 +12,33 @@ var database = firebase.database();
 
 // BandsInTown AJAX - API
 function searchBandsInTown(artist) {
-    //  var queryURL = "https://rest.bandsintown.com/artists/Muse?app_id=codingbootcamp";
-    var queryURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp&date=upcoming";
+    var queryURL = "https://rest.bandsintown.com/artists/" + artist + "?app_id=codingbootcamp";
     $.ajax({
         url: queryURL,
         method: "GET"
     }).then(function (response) {
+        var queryURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp&date=upcoming";
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (responseEvents) {
+            // Printing the entire object to console
+            console.log(response);
+            console.log(responseEvents);
 
-        // Printing the entire object to console
-        console.log(response);
-
-        // Constructing HTML containing the artist information
-        var artistName = $("<band>").text(response.name);
-        var artistURL = $("<band>").attr("href", response.url).append(artistName);
-        var artistImage = $("<img>").attr("src", response.thumb_url);
-        var upcomingEvents = $("<h2>").text(response.upcoming_event_count + " upcoming events");
+            // Constructing HTML containing the artist information
+            var artistName = $("<band>").text(response.name);
+            var artistURL = $("<band>").attr("href", response.url).append(artistName);
+            var artistImage = $("<img>").attr("src", response.thumb_url);
+            var upcomingEvents = $("<h2>").text(response.upcoming_event_count + " upcoming events");
 
 
-        // Empty the contents of the band-div, append the new artist content
-        $("#band-div").empty();
-        $("#band-div").append(artistURL, artistImage, upcomingEvents, goToArtist);
+            // Empty the contents of the band-div, append the new artist content
+            $("#band").empty();
+            $("#band").append(artistURL, artistImage, upcomingEvents, artistName);
+            
+        });
+
     });
 }
 
@@ -41,9 +48,10 @@ $("#stalk").on("click", function (event) {
     // Preventing the button from trying to submit the form
     event.preventDefault();
     // Storing the artist name
-    var inputArtist = $("#artist-input").val().trim();
+    var inputArtist = $("#artist-input").val().trim().replace(" ", "%20");
+    console.log(inputArtist);
     $("#jumbotron").hide();
-$("#info").show();
+    $("#info").show();
     // Running the searchBandsInTown function(passing in the artist as an argument)
     searchBandsInTown(inputArtist);
 });
