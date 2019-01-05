@@ -12,6 +12,7 @@
    
   <!-- <script src="main.js"></script>  -->
   <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
 
   <!-- Firebase Reference -->
   <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
@@ -42,22 +43,30 @@
   </form>
   </nav>
 
-  <div class="jumbotron">
   
-    <h1 class="display-3">Welcome to BandStalk!</h1>
-    <p class="lead">BandStalk is a one-stop solution to search your favorite artist, listen to their music, and STALK them live!<br>
-      Use the stalk bar above to get started!</p>
-    
-    
-  </div>
 </div>
 
-<div class="w3-content w3-section">
-<img class="mySlides w3-animate-fading" src="assets/images/blackandwhite.jpg" style="width:100%" style="height:65%">
+<div class="container">
+    <img class="mySlides w3-animate-fading" src="assets/images/blackandwhite.jpg" style="width:100%" style="height:65%">
 <img class="mySlides w3-animate-fading" src="assets/images/edm.jpg" style="width:100%" style="height:65%">
 <img class="mySlides w3-animate-fading" src="assets/images/lights.jpg" style="width:100%" style="height:65%">
 <img class="mySlides w3-animate-fading" src="assets/images/Red.jpg" style="width:100%" style="height:65%">
 <img class="mySlides w3-animate-fading" src="assets/images/festival.jpg" style="width:100%" style="height:65%">
+    <div class="content">
+        <h1 class="display-3">Welcome to BandStalk!</h1>
+        <p class="lead">BandStalk is a one-stop solution to search your favorite artist, listen to their music, and STALK them live!<br>
+          Use the stalk bar above to get started!</p>
+    </div>
+  </div>
+
+<!-- <div class="w3-content w3-section"><div class="jumbotron">
+    <h1 class="display-3">Welcome to BandStalk!</h1>
+    <p class="lead">BandStalk is a one-stop solution to search your favorite artist, listen to their music, and STALK them live!<br>
+      Use the stalk bar above to get started!</p>
+  </div> -->
+
+
+
 </div>
 <script>
 var myIndex = 0;
@@ -74,6 +83,27 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 6000);    
 }
+
+document.addEventListener('click', click);
+
+function click(e) {
+  let el
+  
+  el = e.target
+  
+  if (el !== e.currentTarget) {
+    if(el.nodeName === 'BUTTON') {
+      
+       if(el.classList.contains('is-active')) {
+         el.classList.remove('is-active')
+       } else {
+         el.classList.add('is-active')
+       }
+    }
+  }
+  event.stopPropagation()
+}
+
 </script>
 
 <script  type=text/javascript src="assets/javascript/app.js"></script>

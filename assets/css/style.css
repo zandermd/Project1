@@ -2,13 +2,116 @@ body{
   background-color: rgb(0, 0, 0);
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  top:15px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  padding-top:10%;
+}
+
+.content {
+  position:relative;
+  top:0px;
+  text-align: center;
+}
+
+
+.display-3{
+  letter-spacing: 6px;
+}
+
+.form-control{
+  height:45px;
+}
+
+.btn{
+  margin-left: 10px;
+  height: 60px;
+  width:144px;
+  padding-top:20px;
+  text-align:center;
+  font-size: 25px;
+  letter-spacing: 6px;
+  font-family: 'Passion One', cursive;
+}
+
+ /* .mySlides{
+   background-size: cover;
+   width:100%;
+   height:65%
+ }
+
+ .w3-content{
+   z-index:50;
+   position: absolute;
+
+ } */
+
+/* .btnC{
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari 
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btnC:after {
+  content: "";
+  background: rgb(0, 252, 0);
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.btnC:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+} */
+
 .lead{
   color:black;
 }
 
-#stalk{
+/* #stalk{
   
-}
+} */
 
 .navbar-brand{
   font-size: 35px;
@@ -57,9 +160,6 @@ body{
   padding-right: 55%;
   padding-left: 5%
 }
-
-
-
 
 * {
   box-sizing: border-box;
@@ -165,13 +265,10 @@ color:white;
 color:white;
 }
 
-/* .pcard{
-  z-index: 100;
-  
-}*/
 
-
-
+.display-3, .lead{
+  color:white;
+}
 
 .myslides{
   margin-top: 0;
