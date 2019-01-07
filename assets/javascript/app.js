@@ -10,7 +10,8 @@ var config = {
 firebase.initializeApp(config);
 var database = firebase.database();
 
-// BandsInTown AJAX - API
+
+
 function searchBandsInTown(artist) {
     var queryURL = "https://rest.bandsintown.com/artists/" + artist + "?app_id=codingbootcamp";
     $.ajax({
@@ -66,7 +67,7 @@ $("#stalk").on("click", function (event) {
     // Preventing the button from trying to submit the form
     event.preventDefault();
     // Storing the artist name
-    var inputArtist = $("#artist-input").val().trim().replace(" ", "%20");
+    var inputArtist = $("#artist-input").val();
     console.log(inputArtist);
     $("#jumbotron").hide();
     $("#info").show();
@@ -74,11 +75,15 @@ $("#stalk").on("click", function (event) {
     searchBandsInTown(inputArtist);
 });
 
+
+
+
+
 //Youtube video finder AJAX - API
 
 var videoArtist;
 
-$("#search-btn").on("click", function () {
+$("#stalk").on("click", function () {
     videoArtist = $("#query").val();
 });
 
@@ -108,8 +113,7 @@ function search(artist) {
         headers: 'Access-Control-Allow-Origin'
     }).done((data) => {
         console.log(data);
-        var nextPageToken = data.nextPageToken;
-        var prevPageToken = data.prevPageToken;
+
 
         // Log data
         console.log(data);
@@ -123,10 +127,10 @@ function search(artist) {
             $('#results').append(output);
         });
 
-        var buttons = getButtons(prevPageToken, nextPageToken);
+
 
         // Display buttons
-        $('#buttons').append(buttons);
+
     });
 };
 
@@ -139,35 +143,35 @@ $('#buttons').html('');
 q = $('#query').val();
 
 // run get request on API
-// $.get(
-//     `https://www.googleapis.com/youtube/v3/search?&part=snippet,id&q=${videoArtist}&type=video&key=${gapikey}`, {
-//         part: 'snippet, id',
-//         q: q,
-//         pageToken: token,
-//         type: 'video',
-//         key: gapikey
-//     }, function(data) {
+ $.get(
+     `https://www.googleapis.com/youtube/v3/search?&part=snippet,id&q=${videoArtist}&type=video&key=${gapikey}`, {
+        part: 'snippet, id',
+        q: q,
 
-//         var nextPageToken = data.nextPageToken;
-//         var prevPageToken = data.prevPageToken;
+        type: 'video',
+        key: gapikey    
+    }, function(data) {
+
+        var nextPageToken = data.nextPageToken;
+        var prevPageToken = data.prevPageToken;
 
 //         // Log data
 //         console.log(data);
 
-//         $.each(data.items, function(i, item) {
+        $.each(data.items, function(i, item) {
 
 //             // Get Output
-//             var output = getOutput(item);
+          var output = getOutput(item);
 
 //             // display results
-//             $('#results').append(output);
-//         });
+            $('#results').append(output);
+         });
 
-//         var buttons = getButtons(prevPageToken, nextPageToken);
+        var buttons = getButtons(prevPageToken, nextPageToken);
 
 //         // Display buttons
-//         $('#buttons').append(buttons);
-//     });    
+       $('#buttons').append(buttons);
+    });    
 
 
 // clear 
@@ -209,7 +213,6 @@ q = $('#query').val();
 //     });    
 
 
-// Build output
 function getOutput(item) {
 
     var videoID = item.id.videoId;
