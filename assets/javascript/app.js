@@ -36,7 +36,7 @@ function searchBandsInTown(artist) {
             // Empty the contents of the band-div, append the new artist content
             $("#band").empty();
             $("#band").append(artistURL, artistImage, upcomingEvents, artistName);
-            
+
         });
 
     });
