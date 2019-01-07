@@ -1,5 +1,6 @@
 body{
   background-color: rgb(0, 0, 0);
+  padding-bottom: 2%;
 }
 
 * {
@@ -44,16 +45,19 @@ body {
 
 .form-control{
   height:45px;
+  width:500px !important;
+  margin-right:28px;
+  color:white;
 }
 
 .btn{
   margin-left: 10px;
-  height: 60px;
+  height: 45px;
   width:144px;
-  padding-top:20px;
+  padding-top:12px;
   text-align:center;
   font-size: 25px;
-  letter-spacing: 6px;
+  /* letter-spacing: 6px; */
   font-family: 'Passion One', cursive;
 }
 
@@ -111,6 +115,7 @@ body {
 .navbar-brand{
   font-size: 35px;
   padding-left:1%;
+  font-family: 'Passion One', cursive;
 }
 
 .jumboimg{
@@ -246,10 +251,31 @@ hr{
 
 h1{
   margin-top:2%;
-  font-family: 'Fredoka One', cursive;
+  /* font-family: 'Fredoka One', cursive; */
+  font-family: 'Passion One', cursive;
   /* text-transform: none; */
   text-align: center;
+}
+
+h2{
+  color:white;
+}
+
+div band{
+  color:white;
+  font-size: 40px;
+  float:center;
+  text-align: center;
+  font-family: 'Passion One', cursive;
+  margin:auto;
   
+}
+
+div#band img{
+  margin-top: -50px;
+  margin-left:120px;
+  margin-right:120px;
+  margin-bottom: 20px;
 }
 
 #med{
