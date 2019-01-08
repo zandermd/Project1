@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>BandStalk</title>
+  <link rel="shortcut icon" href="assets/images/BS logo1.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
     crossorigin="anonymous">
@@ -19,6 +20,7 @@
 
   <!-- Firebase Reference -->
   <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
   <!--JQUERY-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -26,26 +28,25 @@
 </head>
 
 <body>
+  
 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<a class="navbar-brand" href="index.html">BandStalk</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">BandStalk</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarColor02">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Artist Search" id="artist-input">
-
-        <button id="stalk" class="btn btn-secondary my-2 my-sm-0" type="button">STALK</button>
-
-      </form>
+<div class="collapse navbar-collapse" id="navbarColor02">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      
+  </ul>
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control" type="text" placeholder="Artist Search  . . . ." id="artist-input">
+    
+    <button id="stalk" class="btn btn-secondary my-2 my-sm-0" type="button">STALK</button>
+    
+  </form>
   </nav>
 
   <div class="container" id="jumbotron">
@@ -56,7 +57,8 @@
     <img class="mySlides w3-animate-fading" src="assets/images/festival.jpg" style="width:100%" style="height:65%">
     <div class="content">
       <h1 class="display-3">Welcome to BandStalk!</h1>
-      <p class="lead">BandStalk is a one-stop solution to search your favorite artist, listen to their music, and STALK them live!
+      <p class="lead">BandStalk is a one-stop solution to search your favorite artist, listen to their music, and STALK
+        them live!
         <br> Use the stalk bar above to get started!</p>
     </div>
   </div>
@@ -73,6 +75,28 @@
         </p>
         
       </div>
+      <div class="row">
+
+          <div class="col-md-12">
+    
+            <div class="card mb-4">
+            
+              <div class="card-body">
+                <table class="table table-sm table-hover" id='Event-Table'>
+                  <thead>
+                    <tr>
+                      <th scope="col" id="date">Date</th>
+                      <th scope="col" id="City">City</th>
+                      <th scope="col" id="Venue">Venue</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
 
 
@@ -82,12 +106,13 @@
 
       <h1 id="med">LIVE MEDIA</h1>
       <hr>
-      <div id="music">
-        <p>
-        </p>
-      </div>
-
+      <ul id="results"></ul>
+      <div id="buttons"></div>
+      <p>
+      </p>
     </div>
+
+  </div>
   </div>
   </div>
 
