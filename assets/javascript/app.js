@@ -84,7 +84,7 @@ $("#stalk").on("click", function (event) {
 var videoArtist;
 
 $("#stalk").on("click", function () {
-    videoArtist = $("#query").val();
+    videoArtist = $("#artist-input").val();
 });
 
 
@@ -100,16 +100,21 @@ $(function () {
 
 function search(artist) {
 
+    var q = $('#next-button').data('artist-input');
+
     // clear 
     $('#results').html('');
     $('#buttons').html('');
 
     // get form input
-    q = $('#query').val();
+    q = $('#artist-input').val();
+
+    //new
+    
 
     $.ajax({
         method: 'GET',
-        url: `https://www.googleapis.com/youtube/v3/search?&part=snippet,id&q=${artist}&type=video&key=${gapikey}`,
+        url: `https://www.googleapis.com/youtube/v3/search?&part=snippet,id&q="${artist}&type=video&key=${gapikey}`,
         headers: 'Access-Control-Allow-Origin'
     }).done((data) => {
         console.log(data);
@@ -140,7 +145,7 @@ $('#results').html('');
 $('#buttons').html('');
 
 // get form input
-q = $('#query').val();
+q = $('#artist-input').val();
 
 // run get request on API
  $.get(
@@ -179,7 +184,7 @@ $('#results').html('');
 $('#buttons').html('');
 
 // get form input
-q = $('#query').val();
+q = $('#artist-input').val();
 
 // run get request on API
 // $.get(
