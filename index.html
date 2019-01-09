@@ -109,7 +109,6 @@
   <script>
     var myIndex = 0;
     carousel();
-
     function carousel() {
       var i;
       var x = document.getElementsByClassName("mySlides");
@@ -121,17 +120,12 @@
       x[myIndex - 1].style.display = "block";
       setTimeout(carousel, 6000);
     }
-
     document.addEventListener('click', click);
-
     function click(e) {
       let el
-
       el = e.target
-
       if (el !== e.currentTarget) {
         if (el.nodeName === 'BUTTON') {
-
           if (el.classList.contains('is-active')) {
             el.classList.remove('is-active')
           } else {
@@ -141,7 +135,6 @@
       }
       event.stopPropagation()
     }
-
   </script>
 
   <script type=text/javascript src="assets/javascript/app.js"></script>

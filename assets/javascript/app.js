@@ -237,4 +237,3 @@ function getButtons(prevPageToken, nextPageToken) {
 
     return btnoutput;
 };
-
