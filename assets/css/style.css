@@ -1,0 +1,297 @@
+body{
+  background-color: rgb(0, 0, 0);
+  padding-bottom: 2%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  top:15px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  padding-top:10%;
+}
+
+.content {
+  position:relative;
+  top:0px;
+  text-align: center;
+}
+
+
+.display-3{
+  letter-spacing: 6px;
+}
+
+.form-control{
+  height:45px;
+  width:500px !important;
+  margin-right:28px;
+  color:white;
+}
+
+.btn{
+  margin-left: 10px;
+  height: 45px;
+  width:144px;
+  padding-top:12px;
+  text-align:center;
+  font-size: 25px;
+  /* letter-spacing: 6px; */
+  font-family: 'Passion One', cursive;
+}
+
+ /* .mySlides{
+   background-size: cover;
+   width:100%;
+   height:65%
+ }
+ .w3-content{
+   z-index:50;
+   position: absolute;
+ } */
+
+/* .btnC{
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari 
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btnC:after {
+  content: "";
+  background: rgb(0, 252, 0);
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+.btnC:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+} */
+
+.lead{
+  color:black;
+}
+#info {
+  display: none;
+}
+
+.navbar-brand{
+  font-size: 35px;
+  padding-left:1%;
+  font-family: 'Passion One', cursive;
+}
+
+.jumboimg{
+  background-image: url(../images/jumbobackground.jpg);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  margin: 20px 30px 0 30px;
+  color:white;
+  background-size: cover;
+  background-position: 0% 100%;
+}
+
+.container1, .container2 {
+  position: absolute;
+  left:0;
+  right:0;
+  height:400px; /* based on screen size */
+}
+
+.container1 {
+  top: 0;
+  background-color: white;
+}
+
+.container2 {
+  bottom: 0;
+  background-color: white;
+}
+
+.jumbotron{
+  text-align: center;
+  margin: 20px 30px 0 30px;
+  background-color: white;
+  /* background-repeat: no-repeat; */
+}
+
+
+/*artist page*/
+.edJumbo{
+  text-align:left;
+  padding: 1%;
+  padding-right: 55%;
+  padding-left: 5%
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  margin-top: 2%;
+  float: left;
+  width: 48%;
+  padding: 10px;
+  height:100% ;
+  z-index: 90;
+}
+
+.row{
+  margin-left: 1%;
+}
+
+.medDiv{
+  margin-left:1%;
+}
+
+.artInfo{
+  margin-right:1%
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#music{
+margin:5%
+}
+
+#band{
+  margin: 5%;
+}
+
+p{
+  color:white;
+}
+
+hr{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.animation{
+
+  background-color: red;
+  position: relative;
+  -webkit-animation-name: example; 
+  -webkit-animation-duration: 30s; 
+  -webkit-animation-iteration-count: infinite; 
+  animation-name: example;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example {
+  0%   {background-color:rgba(0, 174, 255, 0.651);}
+  25%  {background-color:rgb(0, 255, 136); }
+  50%  {background-color:rgba(76, 0, 255, 0.726);}
+  75%  {background-color:green; }
+  100% {background-color:rgb(0, 255, 85);}
+}
+
+
+@keyframes example {
+  0%   {background-color:rgba(0, 255, 200, 0.541); }
+  25%  {background-color:rgb(0, 153, 255); }
+  50%  {background-color:rgba(111, 0, 255, 0.671);}
+  75%  {background-color:green;}
+  100% {background-color:rgba(0, 255, 106, 0.644); }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+h1{
+  margin-top:2%;
+  /* font-family: 'Fredoka One', cursive; */
+  font-family: 'Passion One', cursive;
+  /* text-transform: none; */
+  text-align: center;
+}
+
+h2{
+  color:white;
+}
+
+div band{
+  color:white;
+  font-size: 40px;
+  float:center;
+  text-align: center;
+  font-family: 'Passion One', cursive;
+  margin:auto;
+  
+}
+
+div#band img{
+  margin-top: -50px;
+  margin-left:120px;
+  margin-right:120px;
+  margin-bottom: 20px;
+}
+
+#med{
+color:white;
+}
+
+#eve{
+color:white;
+}
+
+
+.display-3, .lead{
+  color:white;
+}
+
+.myslides{
+  margin-top: 0;
+  z-index: 99;
+} 

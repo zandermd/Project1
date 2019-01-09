@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BandStalk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-ML9h/UCooefre72ZPxxOHyjbrLT1xKV0AHON1J+OlOV2iwcYemqmWyMfTcfyzLJ1"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <!-- <script src="main.js"></script>  -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <!--JQUERY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+    <!-- <script src="main.js"></script>  -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">BandStalk</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Artist Search">
+
+                <button class="btn btn-secondary my-2 my-sm-0 btnC" type="submit">STALK</button>
+            </form>
+    </nav>
+
+    </div>
+
+    <!-- <div class="jumbotron edJumbo">
+  <h1 class="display-4 aName">Artist name</h1>
+  <p class="lead aInfo">Artist Info Artist Info Artist Info Artist Info Artist Info Artist Info Artist Info Artist Info Artist Info Artist Info Artist Info Artist Info Artist Info Artist Info Artist Info Artist Info Artist Info Artist Info Artist InfoArtist Info</p>
+  <p class="lead aPic">
+    
+  </p>
+</div> -->
+
+    <div class="row" id="info">
+        <div class="column animation artInfo">
+            <!-- style="background-color:#aaa; " -->
+            <h1 id="eve">Artist Info</h1>
+            <hr>
+            <div id="band">
+                <p>Mes ayo numo fan tu tafeget apec. Lir tesan to tahay alekupis elito: Temi atucirim itom lananol cil
+                    raci cararob ecar tah nurur.
+
+                    Yi nipol herivu nenenix penenor ra itiranep. Ateceson rupi dieh rucibod eta padikag ge ietir hacer
+                    ahocamol. Ri ogonacim gip. Tol duleref nin eroti toni ike. Te porebo gerisol laricem. Ce koy variti
+                    etive tielo tito sepe esime te inel.
+
+                    Hohat pen esa redat cira: Sil eseyih ogepelet urire codetieg yapoper tinov ralites iga, niriva
+                    etecelem ase aca dinil neronar etalag tog re ro. Cimig aher hanesi nowasaw culi pice mahad oreya.
+                    Netop tabac yasu nosapo etuto pilita; ha elonil sep ninogiw iru ecoyes osilalo gacor. Utinelib
+                    derec nisi arie ocelet milor miseni litisi; ekariy tepumo eriletut nan. Calot vur dayo lu cara
+                    lasirok obaronas miva! Ipera rumuhec ro giguc eda awibisis eneyucos ro asarali. Lerene hotave
+                    miehe. Mo ril disiy rotogief iselahol nuy peya. Irahitep sero rekat lierid cetiyo lim mece sa! Lop
+                    lodie abapilec uneserig hoyib nicote dapiho ohirelo kira ni. Rig pahalies oramasa pasila ral eto!
+                    Ehinerie seh wih orudara nien apogup culafa. Asop ilib metar calos, rip gena gorese saluhic tote
+                    elanates lasobum.
+
+                    Leripes pe manem ponec ribinu. Lo asiteg to roy gon exekaca! Nome re soleti lure omatare loda
+                    esacise: Lecelip taw enasij ni rekini. Uci deyec esorer isevete, lacini citacep niled ner ce irebe
+                    ned ni. Re yoke ne pepek co ni hah ro tut fisurep, isaneto hicut eriq karepi une. Xesil ceniyen
+                    opofiret va odatan tofam! Kim doyod ritugo ilab tofo ta. Tobam edatenep ceya oxe redoy pabok.
+
+                    Ofew vexele otowo coro iwiyu. Tuditin rahivid nepoc sosime terenab lene tanaro bim gafebut noci:
+                    Nanic terul nofitak resim ekip piceli zago cudes ireniru. Roc so ero tet bi ecamat pelorag! Oyutem
+                    umisakan nos turepo tacenig gar? Rofo tacara mop vayop: Etohieme lov marer yelotok holono bona dila
+                    bebito nasi manieg, per nira roha xi! Enoz ran ileriku racadeb cewatieb cienorof hen ce. Re unon
+                    aye. Osatusa ti toyut lo lolaro; die bu serata bus.
+
+                    Si ilona pe hebie. Bimure odibeb rosic pele bepe fisohen tienoli otienogi noyorin: To zalo hacafa
+                    erad malo ponecos vie limi pet laceru. Esie perat urufiman tomoho ohey ca na lo! Lalelid pa heseso
+                    pesive dikad seteru peruto kis arog, osoci ci tame tide ru pited.</p>
+            </div>
+        </div>
+
+
+
+        <div class="column animation medDiv">
+            <!-- style="background-color:#bbb;" -->
+
+            <h1 id="med">LIVE MEDIA</h1>
+            <hr>
+            <div id="music">
+                <p>Mes ayo numo fan tu tafeget apec. Lir tesan to tahay alekupis elito: Temi atucirim itom lananol cil
+                    raci cararob ecar tah nurur.
+
+                    Yi nipol herivu nenenix penenor ra itiranep. Ateceson rupi dieh rucibod eta padikag ge ietir hacer
+                    ahocamol. Ri ogonacim gip. Tol duleref nin eroti toni ike. Te porebo gerisol laricem. Ce koy variti
+                    etive tielo tito sepe esime te inel.
+
+                    Hohat pen esa redat cira: Sil eseyih ogepelet urire codetieg yapoper tinov ralites iga, niriva
+                    etecelem ase aca dinil neronar etalag tog re ro. Cimig aher hanesi nowasaw culi pice mahad oreya.
+                    Netop tabac yasu nosapo etuto pilita; ha elonil sep ninogiw iru ecoyes osilalo gacor. Utinelib
+                    derec nisi arie ocelet milor miseni litisi; ekariy tepumo eriletut nan. Calot vur dayo lu cara
+                    lasirok obaronas miva! Ipera rumuhec ro giguc eda awibisis eneyucos ro asarali. Lerene hotave
+                    miehe. Mo ril disiy rotogief iselahol nuy peya. Irahitep sero rekat lierid cetiyo lim mece sa! Lop
+                    lodie abapilec uneserig hoyib nicote dapiho ohirelo kira ni. Rig pahalies oramasa pasila ral eto!
+                    Ehinerie seh wih orudara nien apogup culafa. Asop ilib metar calos, rip gena gorese saluhic tote
+                    elanates lasobum.
+
+                    Leripes pe manem ponec ribinu. Lo asiteg to roy gon exekaca! Nome re soleti lure omatare loda
+                    esacise: Lecelip taw enasij ni rekini. Uci deyec esorer isevete, lacini citacep niled ner ce irebe
+                    ned ni. Re yoke ne pepek co ni hah ro tut fisurep, isaneto hicut eriq karepi une. Xesil ceniyen
+                    opofiret va odatan tofam! Kim doyod ritugo ilab tofo ta. Tobam edatenep ceya oxe redoy pabok.
+
+                    Ofew vexele otowo coro iwiyu. Tuditin rahivid nepoc sosime terenab lene tanaro bim gafebut noci:
+                    Nanic terul nofitak resim ekip piceli zago cudes ireniru. Roc so ero tet bi ecamat pelorag! Oyutem
+                    umisakan nos turepo tacenig gar? Rofo tacara mop vayop: Etohieme lov marer yelotok holono bona dila
+                    bebito nasi manieg, per nira roha xi! Enoz ran ileriku racadeb cewatieb cienorof hen ce. Re unon
+                    aye. Osatusa ti toyut lo lolaro; die bu serata bus.
+
+                    Si ilona pe hebie. Bimure odibeb rosic pele bepe fisohen tienoli otienogi noyorin: To zalo hacafa
+                    erad malo ponecos vie limi pet laceru. Esie perat urufiman tomoho ohey ca na lo! Lalelid pa heseso
+                    pesive dikad seteru peruto kis arog, osoci ci tame tide ru pited.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- <div class="row">
+<div class="col-6">
+<div class="container">
+  <div id="band">
+  
+<h1>Band Info</h1>
+</div>
+</div>
+</div>
+<div class= "col-6">
+<div class="container">
+  <div id="music">
+  
+  <h1>Band Music</h1>
+</div>
+</div>
+</div>
+</div> -->
+
+
+    <!-- <div class="card text-white bg-dark mb-3 col-6" style="max-width: 20rem;">
+<div class="card-header">Header</div>
+<div class="card-body">
+  <h4 class="card-title">Dark card title</h4>
+  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</div>
+</div> 
+<div class="pcard">hahahaf</div>
+-->
+
+    <!-- <div class="w3-content w3-section">
+<img class="mySlides w3-animate-fading" src="assets/images/blackandwhite.jpg" style="width:100%" style="height:65%">
+<img class="mySlides w3-animate-fading" src="assets/images/edm.jpg" style="width:100%" style="height:65%">
+<img class="mySlides w3-animate-fading" src="assets/images/lights.jpg" style="width:100%" style="height:65%">
+<img class="mySlides w3-animate-fading" src="assets/images/Red.jpg" style="width:100%" style="height:65%">
+<img class="mySlides w3-animate-fading" src="assets/images/festival.jpg" style="width:100%" style="height:65%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+                  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="index.html">BandStalk</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarColor02">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Artist Search">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Zip Code">
+                        <button class="btn btn-secondary my-2 my-sm-0"  type="submit">STALK</button>
+                      </form>
+                      </nav>
+                      
+                   </div>
+                  
+                   <div class="container">
+                   <div class="text-block"> 
+                      <h4>Nature</h4>
+                      <p>What a beautiful sunrise</p>
+                    </div>
+                  </div>
+  
+                   
+                   
+                   
+                   <div class="w3-content w3-section">
+                    <img class="mySlides w3-animate-fading" src="assets/images/blackandwhite.jpg" style="width:fit-content" style="height:fit-scr">
+                    <img class="mySlides w3-animate-fading" src="assets/images/edm.jpg" style="width:100%" style="height:65%">
+                    <img class="mySlides w3-animate-fading" src="assets/images/lights.jpg" style="width:100%" style="height:65%">
+                    <img class="mySlides w3-animate-fading" src="assets/images/Red.jpg" style="width:100%" style="height:65%">
+                    <img class="mySlides w3-animate-fading" src="assets/images/festival.jpg" style="width:100%" style="height:65%">
+              </div>
+                  <script>
+                    var myIndex = 0;
+                    carousel();
+                    
+                    function carousel() {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                      }
+                      myIndex++;
+                      if (myIndex > x.length) {myIndex = 1}    
+                      x[myIndex-1].style.display = "block";  
+                      setTimeout(carousel, 6000);    
+                    }
+                    </script>
+
+    <script type=text/javascript src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
