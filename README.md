@@ -4,7 +4,7 @@ Title: Band Stalk
 
 Concept: Users will be able to search for whatever band they like. Information for upcoming concerts & media for the band will come from YouTube and display once user inputs the band they're searching for.
 
-APIS: Youtube API to bring up music for that band so user can listen to that band's music. BandsInTown API will be used for upcomoing event information. 
+APIS: Youtube API to bring up music for that band so user can listen to that band's music. BandsInTown API will be used for upcoming event information. 
 
 Framework used: BootSwatch
 
