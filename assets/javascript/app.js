@@ -10,8 +10,6 @@ var config = {
 firebase.initializeApp(config);
 var database = firebase.database();
 
-
-
 function searchBandsInTown(artist) {
     var queryURL = "https://rest.bandsintown.com/artists/" + artist + "?app_id=codingbootcamp";
     $.ajax({
@@ -32,7 +30,6 @@ function searchBandsInTown(artist) {
             var artistURL = $("<band>").attr("href", response.url).append(artistName);
             var artistImage = $("<img>").attr("src", response.thumb_url);
             var upcomingEvents = $("<h2>").text(response.upcoming_event_count + " upcoming events");
-
 
             // Empty the contents of the band div, append the new artist content
             $("#band").empty();
@@ -75,10 +72,6 @@ $("#stalk").on("click", function (event) {
     searchBandsInTown(inputArtist);
 });
 
-
-
-
-
 //Youtube video finder AJAX - API
 
 var videoArtist;
@@ -108,8 +101,8 @@ function search(artist) {
     q = $('#query').val();
 
     $.ajax({
-        method: 'GET',
         url: `https://www.googleapis.com/youtube/v3/search?&part=snippet,id&q=${artist}&type=video&key=${gapikey}`,
+        method: 'GET',
         headers: 'Access-Control-Allow-Origin'
     }).done((data) => {
         console.log(data);
