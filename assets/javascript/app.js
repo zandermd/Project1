@@ -10,6 +10,8 @@ var config = {
 firebase.initializeApp(config);
 var database = firebase.database();
 
+
+// BAnds in Town
 function searchBandsInTown(artist) {
     var queryURL = "https://rest.bandsintown.com/artists/" + artist + "?app_id=codingbootcamp";
     $.ajax({
@@ -31,6 +33,9 @@ function searchBandsInTown(artist) {
             var artistImage = $("<img>").attr("src", response.thumb_url);
             var upcomingEvents = $("<h2>").text(response.upcoming_event_count + " upcoming events");
 
+            
+
+
             // Empty the contents of the band div, append the new artist content
             $("#band").empty();
             $("#band").append(artistURL, artistImage,artistName, upcomingEvents);
@@ -42,17 +47,30 @@ function searchBandsInTown(artist) {
             // console.log(responseEvents[i]);
 
             var venueName = responseEvents[i].venue.name;
-            var venueCountry = responseEvents[i].venue.country;
+            // var venueCountry = responseEvents[i].venue.country;
             var venueCity = responseEvents[i].venue.city;
             var venueDate = responseEvents[i].datetime;
 
             console.log(
                 venueName,
                 venueCity,
-                venueCountry,
+                // venueCountry,
                 venueDate,
-            )
+            ) 
+             var newRow = $("<tr>").append(
+              $("<td>").text(venueDate)
+            ).append($("<td>").text(venueCity)).append( $("<td>").text(venueName))
+             console.log(newRow);
+            // $("<").text(venueName);
+
+            $("#Event-Table tbody").append(newRow)
             }
+            
+          
+
+           
+
+            
         });
 
     });
